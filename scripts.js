@@ -1,5 +1,7 @@
-import { createTask } from "./tasks.js";
-import { createAdding } from "./adding.js";
+// @ts-check
+
+import { createTask } from "./modules/tasks.js";
+import { createAdding } from "./modules/adding.js";
 
 // /**
 //  *
@@ -16,11 +18,11 @@ window.addEventListener("error", () => {
   document.body.innerHTML = "Something went very wrong. Please refresh.";
 });
 
-createTask({
-  title: "Wash the Dog",
-  urgency: "High",
-  due: new Date(),
-});
+// createTask({
+//   title: "Wash the Dog",
+//   urgency: "High",
+//   due: new Date(),
+// });
 
 const adding = createAdding();
 

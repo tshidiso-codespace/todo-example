@@ -18,38 +18,38 @@ const createAddingHTML = () => {
 
   dialog.innerHTML = `
     
-        <h2 class="overlay__title">Add Task</h2>
+    <h2 class="overlay__title">Add Task</h2>
   
-        <form data-form id="adding>
-          <label class="overlay__field">
-            <div>Title</div>
-            <input required class="overlay__input" name="title" />
-          </label>
-          
-          <label class="overlay__field">
-            <div>Due</div>
-            <input type="date" class="overlay__input" name="due />
-          </label>
-  
-          <label class="overlay__field">
-            <div>Urgency</div>
-            <select required class="overlay__input" name="urgency" />
-              <option value="medium">Medium</option>
-              <option value="high">High</option>
-              <option value="low">Low</option>
-          </label>
-  
-          <label class="overlay__field">
-            <div>Label</div>
-           <input class="overlay__input" />
-          </label>
-        </form>
-  
-        <div class="overlay__row">
-          <button class="button" data-cancel>Cancel</button>
-          <button class="button" type="submit" form="adding>Save</button>
-        </div>
-    `;
+    <form data-form id="adding>
+      <label class="overlay__field">
+        <div>Title</div>
+        <input required class="overlay__input" name="title" />
+      </label>
+        
+      <label class="overlay__field">
+        <div>Due</div>
+        <input type="date" class="overlay__input" name="due />
+      </label>
+
+      <label class="overlay__field">
+        <div>Urgency</div>
+        <select required class="overlay__input" name="urgency" />
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+          <option value="low">Low</option>
+      </label>
+
+      <label class="overlay__field">
+        <div>Label</div>
+        <input class="overlay__input" />
+      </label>
+    </form>
+
+    <div class="overlay__row">
+      <button class="button" data-cancel>Cancel</button>
+      <button class="button" type="submit" form="adding>Save</button>
+    </div>
+  `;
   element.appendChild(dialog);
 
   return {
